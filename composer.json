@@ -1,0 +1,31 @@
+{
+    "name": "webcoders/composer-svn-export-plugin",
+    "type": "composer-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrii Pukhalevych"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "composer-plugin-api": "^2.0"
+    },
+    "require-dev": {
+        "composer/composer": "^2.0",
+        "phpunit/phpunit": "^9.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Webcoders\\Composer\\SvnExportPlugin\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Webcoders\\Composer\\SvnExportPlugin\\Test\\": "tests"
+        }
+    },
+    "extra": {
+        "class": "Webcoders\\Composer\\SvnExportPlugin\\SvnExportPlugin"
+    }
+}
